@@ -23,6 +23,10 @@ android {
         }
     }
 
+    buildTypes.each {
+        it.buildConfigField 'String', 'EVERNOTE_CONSUMER_KEY', evernoteConsumerKey
+        it.buildConfigField 'String', 'EVERNOTE_CONSUMER_SECRET', evernoteConsumerSecret
+    }
 }
 
 
