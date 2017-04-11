@@ -5,4 +5,6 @@
 
     <string name="snackbar_login_fail">El proceso de login falló</string>
     <string name="snackbar_user_not_logged">El usuario no está logado</string>
+    <string name="snackbar_get_notebooks_error">No se han podido recuperar las libretas</string>
 </resources>
+
