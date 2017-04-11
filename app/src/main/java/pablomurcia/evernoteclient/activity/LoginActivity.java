@@ -20,7 +20,6 @@ public class LoginActivity extends AppCompatActivity implements EvernoteLoginFra
         activity.startActivity(new Intent(activity, LoginActivity.class));
     }
 
-    private static final int SUCCESS_REQUEST_CODE_LOGIN = 66394;
     private Button loginButton;
 
     @Override
@@ -45,9 +44,9 @@ public class LoginActivity extends AppCompatActivity implements EvernoteLoginFra
         if (successful){
             Log.e(getString(R.string.LOG), "LOGIN OK");
         } else {
-            Snackbar.make(null, "El proceso de login falló", Snackbar.LENGTH_LONG).show();
-            loginButton.setEnabled(true);
             Log.e(getString(R.string.LOG), "LOGIN FAIL");
+            Snackbar.make(null, getString(R.string.snackbar_login_fail), Snackbar.LENGTH_LONG).show();
+            loginButton.setEnabled(true);
         }
         Log.e(getString(R.string.LOG) + "isLoggedIn()=", String.valueOf(EvernoteSession.getInstance().isLoggedIn()));
     }

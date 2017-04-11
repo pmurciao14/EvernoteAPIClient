@@ -2,4 +2,7 @@
     <string name="app_name">Evernote Client</string>
     <string name="LOG">-----></string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="snackbar_login_fail">El proceso de login falló</string>
+    <string name="snackbar_user_not_logged">El usuario no está logado</string>
 </resources>

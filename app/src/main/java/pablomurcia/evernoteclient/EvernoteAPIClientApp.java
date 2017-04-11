@@ -8,7 +8,7 @@ import com.evernote.client.android.EvernoteSession;
  * Created by ifbpmurcia.externos on 11/04/2017.
  */
 
-public class App extends Application {
+public class EvernoteAPIClientApp extends Application {
     private static final String CONSUMER_KEY = "pmurciao14";
     private static final String CONSUMER_SECRET = "a2d2f6af9d8833ad";
     private static final EvernoteSession.EvernoteService EVERNOTE_SERVICE = EvernoteSession.EvernoteService.SANDBOX;
