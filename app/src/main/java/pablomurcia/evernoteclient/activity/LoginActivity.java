@@ -43,6 +43,8 @@ public class LoginActivity extends AppCompatActivity implements EvernoteLoginFra
     public void onLoginFinished(boolean successful) {
         if (successful){
             Log.e(getString(R.string.LOG), "LOGIN OK");
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
         } else {
             Log.e(getString(R.string.LOG), "LOGIN FAIL");
             Snackbar.make(null, getString(R.string.snackbar_login_fail), Snackbar.LENGTH_LONG).show();

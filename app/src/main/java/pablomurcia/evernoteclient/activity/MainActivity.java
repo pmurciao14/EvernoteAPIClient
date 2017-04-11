@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (!EvernoteSession.getInstance().isLoggedIn()){
-            //Snackbar.make(null, getString(R.string.snackbar_user_not_logged), Snackbar.LENGTH_LONG).show();
             return;
         }
 
